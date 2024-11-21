@@ -1,0 +1,1 @@
+stalonetray  -t -f --window-layer top --dockapp-mode --window-strut bottom --dockapp-mode simple --window-type toolbar

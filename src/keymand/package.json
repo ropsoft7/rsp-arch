@@ -1,0 +1,17 @@
+{
+  "name": "rsp.keymand",
+  "version": "1.0.0",
+  "description": "The service of the native keyboard shortcuts.",
+  "scripts": {
+    "start": "sudo n 13; npm run stop; node index.js",
+    "stop": "pkill keymand",
+    "inst": "sudo n 13; rm -rf node_modules; rm -rf package-lock.json; npm install --force"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "iohook": "^0.9.3",
+    "nodemon": "^3.1.7",
+    "shelljs": "^0.8.5"
+  }
+}

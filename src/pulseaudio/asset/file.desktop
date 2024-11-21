@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Bluetooth
+Comment=Blueman Bluetooth Manager
+Icon=blueman
+Exec=blueman-manager
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Settings;DesktopSettings;Qt;RSp;
+OnlyShowIn=RSp;

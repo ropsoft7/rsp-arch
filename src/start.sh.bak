@@ -1,0 +1,5 @@
+#!/bin/bash
+ 
+sudo killall -9 dnsproxy;
+sudo ./src/dnsproxy -u tls://1.1.1.1:853 -u tls://94.140.15.15:853 -u sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk -u https://127.0.0.1:8118 --https-port 443 --quic-port 8853 -l 127.0.0.1 --tls-port 853 --timeout 15s
+
