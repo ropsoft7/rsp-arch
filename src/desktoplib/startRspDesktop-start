@@ -1,0 +1,12 @@
+#!/usr/local/bin/rsp.nodeJS
+
+const env = process.env;
+const exec = require('shelljs').exec;
+
+var readyAppss = require(`/home/${env.USER}/.config/autostart.json`).applications
+
+console.debug('readyAppss', readyAppss)
+
+readyAppss.forEach(app => {
+    exec(`${app}`)
+});

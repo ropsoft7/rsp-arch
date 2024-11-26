@@ -1,0 +1,41 @@
+* {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #eeeeee;
+  }
+  
+  window#pantray {
+    background: #2e3436;
+    border-bottom: 1px solid #1c1c1c;
+  }
+  
+  #clock, #cpu, #memory, #network, #tray {
+    padding: 0 10px;
+    color: #eeeeee;
+  }
+  
+  #clock {
+    font-weight: bold;
+  }
+  
+  #tray > .widget {
+    background: transparent;
+  }
+  
+  .widget {
+    background: transparent;
+  }
+  
+  #cpu, #memory {
+    color: #729fcf;
+  }
+  
+  #network {
+    color: #8ae234;
+  }
+  
+  .tooltip {
+    background: #1c1c1c;
+    color: #eeeeee;
+  }
+  

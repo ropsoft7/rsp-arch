@@ -1,0 +1,33 @@
+#!/usr/local/bin/rsp.nodeJS
+
+const env = process.env;
+const exec = require('shelljs').exec;
+
+var autorunCommands = require(`/home/${env.USER}/.config/autorun.json`).commands,
+    readyCommands = autorunCommands.map(commandObj => {
+        
+        let shell = commandObj.shell,
+            command = commandObj.command;
+        
+        if (shell === 'sh') {
+            shell = 'sh -c --'
+        }
+
+        if (shell === 'zsh') {
+            shell = 'zsh -c --'
+        }
+
+        if (shell === 'bash') {
+            shell = 'bash -c --'
+        }
+        
+        return `${shell} "${command}"`
+    })
+
+    console.debug('autorunCommands', autorunCommands)
+    console.debug('readyCommands', readyCommands)
+
+readyCommands.forEach(command => {
+    exec(`${command}`)
+});
+

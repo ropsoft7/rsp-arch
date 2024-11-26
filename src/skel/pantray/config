@@ -1,0 +1,27 @@
+{
+    "name": "pantray",
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["network"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "tray"],
+  
+    "network": {
+      "format": "{ifname} {ipaddr}"
+    },
+    "clock": {
+      "format": "{:%H:%M}",
+      "tooltip": false
+    },
+    "cpu": {
+      "format": "CPU {usage}%"
+    },
+    "memory": {
+      "format": "RAM {used} / {total} MiB"
+    },
+    "tray": {
+      "icon-size": 18
+    }
+  }
+  

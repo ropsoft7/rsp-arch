@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source /usr/lib/rsp/desktop/startRspDesktop-env;
+
+compositor="/usr/local/bin/compify";
+postScript="/usr/lib/rsp/desktop/startRspDesktop-post";
+dbusLauncher="/usr/lib/rsp/misc/runDBUSessionIfNeed";
+
+exec $dbusLauncher $compositor --startup $postScript;
